@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
     int i = 0;
     printf("[Morse_coder]Text to encode >");
     getText(rawText, 500);
-    //printf("Vous avez tape : '%s'", rawText);
+
     while(rawText[i] != '\0') {
         if (rawText[i] == ' ') {
             printf("%s", "|");
