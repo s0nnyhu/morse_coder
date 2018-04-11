@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 void cleanBuffer(){
     int c = 0;
@@ -41,7 +42,7 @@ int main(int argc, char* argv[])
             printf("%5s", " ");
         }
         for (int j=0; j <26; j++) {
-            if (rawText[i] == alphabet[j]) {
+            if (tolower(rawText[i]) == alphabet[j]) {
                 printf("%s", morse[j]);
                 printf("%5s", " ");
             } 
