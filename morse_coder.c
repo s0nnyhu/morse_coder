@@ -51,12 +51,12 @@ int main(int argc, char* argv[])
             }
         }
 
-		if(isInArray == 0 && rawText[i] != ' ') {
+	if(isInArray == 0 && rawText[i] != ' ') {
                 printf("%c", rawText[i]);
                 printf("%5s", " ");
-		}
+	}
         i++;
-		isInArray = 0;
+	isInArray = 0;
     }
 
     return 0;
